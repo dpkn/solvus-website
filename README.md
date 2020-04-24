@@ -1,6 +1,7 @@
 # solv.us website
 
-The landing page template for the solv.us domain
+The landing page for the solv.us domain. Based on the Holly template by [Cruip](https://cruip.com/).
+
 
 ## Project setup
 ```
