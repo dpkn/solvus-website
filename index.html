@@ -7,7 +7,7 @@
     <title>solv.us suite</title>
     <link href="https://fonts.googleapis.com/css?Fira+Code:wght@400;700" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/style.css">
-    <!-- Template override -->
+    <!-- Template override b.c. im too lazy to install all the dependencies -->
     <style>
        body,.button{
             font-family: 'Fira Code';
@@ -26,14 +26,25 @@
         .footer-copyright a{
             text-decoration: underline;
         }
-           @media (max-width: 1024px){.footer-copyright{color:#fff}}
+        .site-header-large-bg span, .hero-illustration::before{
+            background:linear-gradient(to bottom,#313440 0, #4f5468 50%, #262832 100%);
+        }   
+        .button-primary{
+            background:linear-gradient( 35deg, #4f5468 0, #262832 100%);
+            transition:opacity 0.4s;
+        }
+        .button-primary:hover{
+             background:linear-gradient( 135deg, #4f5468 0, #262832 100%);
+             opacity:0.7;
+        }
+        @media (max-width: 1024px){.footer-copyright{color:#fff}}
     </style>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <link rel="shortcut icon" href="dist/favicon.ico" type="image/x-icon">
 
 </head>
-<body class="is-boxed has-animations">
-    <div class="body-wrap boxed-container">
+<body class="has-animations">
+    <div class="body-wrap">
         <header class="site-header">
             <div class="container">
                 <div class="site-header-large-bg"><span></span></div>
@@ -251,7 +262,7 @@
                             </a>
                         </li>
                     </ul> -->
-                    <div class="footer-copyright">Made with &#9825; by&nbsp;<a href="https://danielkorssen.com" target="_blank">Daniël</a></div>
+                    <div class="footer-copyright">Made with &#9825; by&nbsp;<a href="https://beepboop.technology" target="_blank">BeepBoop</a></div>
                 </div>
             </div>
         </footer>
