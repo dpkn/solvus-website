@@ -1,0 +1,170 @@
+body, html{
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    padding:0;
+    margin:0;    
+}
+
+body{
+    font-family: 'Fira Sans', sans-serif;
+    background:#14151a;
+    color:#fff;
+    font-weight: 300;
+}
+
+h1{
+    font-size: 2em;
+}
+section p{
+    max-width: 500px;
+    margin:0 auto;
+    font-size: 1.2em;
+}
+
+.container{
+    max-width: 1200px;
+    margin:0 auto;
+    padding:0 20px;
+}
+
+hr{
+    border:none;
+    height:0.5px;
+    background:linear-gradient(100deg, #376DF9 0, #FF5FA0 75%, #FFC55A 100%);
+    margin:80px 0;
+    z-index:10;
+}
+/*
+* Header
+*/
+header{
+    width:100%;
+    padding:80px 0;
+    background: linear-gradient(180deg,#262832,#14151a 100%);
+    margin-bottom: -30px;
+}
+
+/*
+* Hero
+*/
+#hero{
+    display: flex;
+    gap:100px;
+    margin-bottom: 100px;
+}
+#hero h1{
+    font-weight: 500;
+    font-size: 3em;
+    margin:0;
+}
+#hero h1 span{
+    font-weight: 300;
+}
+#hero h2{
+    font-weight: 300;
+}
+
+#screenshot{
+    display: block;
+    border-radius: 10px;
+    max-width: 700px;
+    width:550px;
+    height:350px;
+    box-shadow: 0 0 300px 1px;
+    color:#a166ca;
+    animation: color_change 3s infinite alternate;
+    transition: box-shadow 0.1s, transform 0.1s;
+}
+
+
+@keyframes color_change {
+    0% { color: #a166ca; box-shadow: 0 0 100px 1px; }
+    25% { color: #ff798e; }
+    50% { color:  #FFC55A; box-shadow: 0 0 150px 2px;}
+    75% { color: #376DF9; }
+    100% { color: #686ae3; box-shadow: 0 0 300px 1px;}
+
+}
+
+/*
+*/
+.explainer{
+    text-align: center;
+}
+.explainer img{
+    max-width: 100%;
+    margin:50px auto;
+    margin-top:0;
+}
+.explainer hr{
+    margin:0;
+    height:4px;
+}
+
+button, .button{
+    display: inline-block;
+    color:#191a1e;
+    background:linear-gradient(65deg, #fff 0, rgb(255, 224, 202) 100%);
+    transition: background 0.5s;
+    font-size: 1em;
+    font-weight: 500;
+    padding:20px 25px;
+    border-radius: 5px;
+    border:none;
+    text-decoration: none;
+}
+button:hover{
+     background:#fff;
+}
+button.outline, .button.outline{
+    background:none;
+    color:#fff;
+    border:2px solid #FF8D74;
+}
+
+.logo{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    padding:0;
+    background: radial-gradient(circle at bottom, #376DF9 0%, #ff79af 50%, #FF8D74 100%);
+}
+
+/*
+*/
+.cta-box{
+    margin: 80px 0;
+    background: linear-gradient(100deg, #376DF9 0, #FF5FA0 75%, #FFC55A 100%);
+    padding:50px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+.cta-box h1{
+    font-size: 2em;
+}
+.cta-box button, .cta-box .button{
+    color:#ff8884;
+}
+
+/*
+* Footer
+*/
+
+footer{
+    margin-top:40px;
+    padding:100px 0;
+    bottom:0;
+    text-align: center;
+    font-size: 0.9em;
+    color:#4e5263;
+    background:#262831;
+}
+footer .beepboop_logo{
+    padding-top:10px;
+    max-width: 81px;
+    display: block;
+    margin: 0 auto;
+}
