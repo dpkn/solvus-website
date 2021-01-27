@@ -51,10 +51,12 @@ hr{
 header{
     width:100%;
     padding:100px 0;
-    background: linear-gradient(180deg,#262832,#14151a 100%);
     margin-bottom: -30px;
 }
 
+.fix-soon{
+        background: linear-gradient(180deg,#262832,#14151a 100%);
+}
 
 /*
 * Hero
@@ -68,6 +70,7 @@ header{
 }
 #hero div{
     flex-basis: 40%;
+    z-index:999;
 }
 #hero h1{
     font-weight: 500;
@@ -86,19 +89,34 @@ header{
 #screenshot{
     display: block;
     border-radius: 10px;
-    flex-basis: 60%;
-    max-width: 660px;
-    box-shadow: 0 0 300px 1px;
+    position: absolute;
+right: 0;
+top: 100px;
+    max-width: 1220px;
+ 
     color:#a166ca;
+    align-self: center;
+}
+.bonk{
+    width:550px;
+    height:300px;
+    top:200px;
+    right:300px;
+    position: absolute;
+      box-shadow: 0 0 300px 1px;
     animation: color_change 3s infinite alternate;
     transition: box-shadow 0.1s, transform 0.3s;
     transform:  rotateX(-0.5) rotateY(-8.5);
-    align-self: center;
 }
 
 @media only screen and (max-width: 1200px) { 
     #screenshot{
-        max-width: 500px;
+        max-width: 1000px;
+        right:-80px;
+    }
+    .bonk{
+       width:150px;
+       height:150px;
     }
 }
 @media only screen and (max-width: 900px) {
